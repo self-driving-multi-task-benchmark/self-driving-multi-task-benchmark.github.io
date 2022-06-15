@@ -55,27 +55,6 @@
     </div>
   </header><!-- End Header -->
 
-  <section id="hero">
-    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-      <div class="carousel-inner" role="listbox">
-
-        <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
-          <div class="carousel-container">
-            <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Self Driving Multi Task Benchmark</h2>
-              <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> -->
-              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section><!-- End Hero -->
-
   <main id="main">
 
     <!-- ======= About Us Section ======= -->
@@ -83,7 +62,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Multi Task Learning</h2>
+          <h2>Self Driving Multi Task Benchmark</h2>
         </div>
 
         <div class="row">
@@ -97,87 +76,30 @@
             <p>
               Multi-task learning architectures apply parameter sharing to learn share information between different tasks. According to the sharing methods, these architectures are divided into encoder-focused architectures and decoder-focused architectures. In encoder-focused architectures, parameters are only shared in encoder stage which can further divided into hard and soft parameter sharing, followed by task-specific heads. 
             </p>
+            <img style="width: 100%" src="assets/img/model.png">
+            <p>We follow the common multi-task architecture where each task shares the same encoder and has its own specific head. The benchmark focuses on three types of task scheduling, four task balancing methods and two partial-label learning techniques and experiments on three common data split settings.</p>
           </div>
         </div>
 
       </div>
     </section><!-- End About Us Section -->
 
-    <!-- ======= Featured Services Section ======= -->
-    <section id="featured-services" class="featured-services section-bg">
-      <div class="container">
-
-        <div class="row no-gutters">
-          <div class="col-lg-4 col-md-6">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-laptop"></i></div>
-              <h4 class="title"><a href="">Hard parameter sharing</a></h4>
-              <p class="description">In hard parameter sharing, the shared part of the parameters are consistent throughout different tasks typically being the encoding part</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-briefcase"></i></div>
-              <h4 class="title"><a href="">Soft parameter sharing</a></h4>
-              <p class="description">In soft parameter sharing, each tasks has its own parameter setting and sharing is accomplished by feature sharing mechanism</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-calendar4-week"></i></div>
-              <h4 class="title"><a href="">Decoder-focused</a></h4>
-              <p class="description">For decoder-focused architectures, parameters are shard both in encoder and decoder stage.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Featured Services Section -->
-
     <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us">
+    <section id="benchmark" class="benchmark">
       <div class="container">
-
-        <div class="row no-gutters">
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>01</span>
-            <h4>Table 1</h4>
-            <p>Description 1</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>02</span>
-            <h4>Table</h4>
-            <p>Description</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>03</span>
-            <h4>Table</h4>
-            <p>Description</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>04</span>
-            <h4>Table</h4>
-            <p>Description</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>05</span>
-            <h4>Table</h4>
-            <p>Description</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>06</span>
-            <h4>Table</h4>
-            <p>Description</p>
-          </div>
-
+        <div class="section-title">
+          <h2>Benchmark</h2>
         </div>
-
+        <div class="row">
+          <div class="col-lg-12 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <p>We benchmark different task scheduling methods and partial-label learning methods on BDD100K dataset with different data split settings.</p>
+            <div class="table-img"><img src="assets/img/table1.png"></div>
+            <p>We compare single-task and multi-task learning with different task scheduling methods on BDD100K dataset</p>
+            <div class="table-img"><img src="assets/img/table2.png"></div>
+            <p>We test our best methods on nuImage dataset and also get best performance.</p>
+            <div class="table-img"><img style="width: 500px" src="assets/img/table3.png"></div>
+          </div>
+        </div>
       </div>
     </section><!-- End Why Us Section -->
 
