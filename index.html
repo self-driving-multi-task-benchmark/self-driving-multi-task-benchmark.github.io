@@ -77,12 +77,29 @@
               Multi-task learning architectures apply parameter sharing to learn share information between different tasks. According to the sharing methods, these architectures are divided into encoder-focused architectures and decoder-focused architectures. In encoder-focused architectures, parameters are only shared in encoder stage which can further divided into hard and soft parameter sharing, followed by task-specific heads. 
             </p>
             <img style="width: 100%" src="assets/img/model.png">
-            <p>We follow the common multi-task architecture where each task shares the same encoder and has its own specific head. The benchmark focuses on three types of task scheduling, four task balancing methods and two partial-label learning techniques and experiments on three common data split settings.</p>
+            <p>We follow the common multi-task architecture where each task shares the same encoder and has its own specific head. The benchmark focuses on three types of task scheduling, four task balancing methods and two partial-label learning techniques and experiments on three common data split settings. Our code will be available at <a href="https://github.com/liangcici/MTL-Driv">github</a>.</p>
           </div>
         </div>
 
       </div>
     </section><!-- End About Us Section -->
+
+    <section id="data-split" class="data-split">
+      <div class="container">
+        <div class="section-title">
+          <h2>Data Split</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <p><strong>BDD100k</strong> dataset contains multiple tasks. Here we focus on object detection (OD), semantic segmentation (SS), drivable area segmentation (DA) and lane detection (LD). In BDD100K, 70k training images are labeled for object detection, drivable area segmentation and lane detection, and only 7k training images are labeled for semantic segmentation.</p>
+            <p class="sub-detail"><strong>Disjoint-normal setting</strong> With the same annotation effort or budget, the quantity of annotations decreases with the increase of the complexity of annotating a task. Therefore, we consider a realistic scenario where each input image is labeled to only one task in this setting, namely, the annotations for each task are disjoint. The number of labelled images for each task is as follows: object detection (10k), semantic segmentation (7k), drivable area segmentation (20k), and lane detection (20k).</p>
+            <p class="sub-detail"><strong>Disjoint-balance setting</strong> We further consider a more difficult setting that corresponds to the scenarios of scarce annotations. There are 21k images in this setting and each task has 7k labeled images that are not overlapped with other tasks.</p>
+            <p class="sub-detail"><strong>Full-setting</strong> Full-setting refers to experimenting on all available annotations on ≈74k images in BDD100K and can be used to analyze the upper bound of different methods.</p>
+            <p><strong>nuImages</strong> dataset contains 73k images collected from diverse spatiotemporal distribution and weather and lighting conditions. All images are annotated in object detection (OD) and semantic segmentation (SS).</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Why Us Section -->
 
     <!-- ======= Why Us Section ======= -->
     <section id="benchmark" class="benchmark">
